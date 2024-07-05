@@ -1,0 +1,21 @@
+.footer {
+    width: 100% !important;
+    padding: 20px;
+    background: $cinza;
+    @include box-shadow(0 0 0 10px $cinza);
+    p {
+        display: inline-block;
+        color: $bege-claro;
+        @include d(small) {
+            display: block;
+            text-align: center;
+        }
+    }
+    a img {
+        float: right;
+        @include d(small) {
+            float: none;
+            margin: 20px auto;
+        }
+    }
+}

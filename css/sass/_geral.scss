@@ -1,0 +1,36 @@
+body {
+    background: $bege-claro;
+    border: 10px solid $bege-medio;
+    color: $cinza;
+    @include d(small) {
+        border: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    @include tipo-1(18);
+}
+
+.title {
+    text-transform: uppercase;
+    @include tipo-1(18);
+    @include d(small) {
+        margin-bottom: 40px;
+    }
+    &::after {
+        content: "";
+        background: $cinza;
+        width: 75%;
+        float: right;
+        height: 2px;
+        margin-top: 13px;
+        @include d(medium) {
+            width: 60%;
+        }
+    }
+}

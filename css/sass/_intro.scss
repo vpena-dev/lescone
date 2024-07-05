@@ -1,0 +1,62 @@
+.intro {
+    margin-top: 60px;
+    @include d(small) {
+        margin-top: 20px;
+    }
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.intro-info {
+    border-right: 2px solid $cinza;
+    max-width: 320px;
+    p {
+        padding: 10px 0;
+    }
+    p:first-child {
+        border-bottom: 2px solid $cinza;
+    }
+}
+
+.intro-tel {
+    color: $bege-escuro;
+    @include d(small) {
+        margin-bottom: 40px;
+    }
+    &::after {
+        content: "/ / / /";
+        display: block;
+        margin-top: 200px;
+        font-size: 220px;
+        letter-spacing: -90px;
+        color: $cinza;
+        @include d(medium) {
+            margin-top: 80px;
+            font-size: 160px;
+            letter-spacing: -70px;
+        }
+        @include d(small) {
+            display: none;
+        }
+    }
+}
+
+#status {
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    &.open {
+        background-color: $verde;
+    }
+    &.closed {
+        background-color: $vermelho;
+    }
+}
+
+.intro-photo {
+    border: 10px solid $bege-medio;
+    width: 100%;
+}

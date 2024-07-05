@@ -1,0 +1,50 @@
+.menu {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    @include d(small) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.menu-item {
+    margin-bottom: 60px;
+    h2 {
+        margin-bottom: 1rem;
+        @include tipo-2(24);
+        @include d(small) {
+            margin-left: 80px;
+        }
+    }
+    li {
+        font-family: $font-1;
+        font-size: rem(18);
+        line-height: rem(35, 18);
+        span {
+            font-family: $font-2;
+            color: $bege-escuro;
+            display: inline-block;
+            width: 70px;
+            text-align: right;
+            margin-right: 10px;
+            margin-left: -80px;
+            @include d(small) {
+                margin-left: 0px;
+            }
+        }
+    }
+    img {
+        border-radius: 50%;
+        border: 10px solid $bege-medio;
+        position: absolute;
+        right: 0px;
+        margin-top: 20px;
+        @include d(large) {
+            right: 150px;
+        }
+        @include d(small) {
+            margin-top: 20px;
+            width: 180px;
+        }
+    }
+}
