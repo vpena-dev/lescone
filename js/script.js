@@ -6,7 +6,10 @@ function changeStatus() {
   const weekDay = now.getDay();
   const hour = now.getHours();
 
-  if (weekDay !== 0 && hour >= 7 && hour < 18) {
+  const openTime = 7;
+  const closeTime = 18;
+
+  if (weekDay !== 0 && hour >= openTime && hour < closeTime) {
     status.classList.remove('closed');
     status.classList.add('open');
     status.style.display = 'inline-block';
